@@ -1,0 +1,237 @@
+{
+  "business": "Brightsmile Dental",
+  "language": "en",
+  "synonyms": {
+    "price": [
+      "cost",
+      "fee",
+      "fees",
+      "pricing",
+      "charge",
+      "preco",
+      "valor",
+      "custa",
+      "precio",
+      "cuesta",
+      "tarifa"
+    ],
+    "appointment": [
+      "booking",
+      "book",
+      "schedule",
+      "slot",
+      "visit",
+      "consulta",
+      "agendar",
+      "marcar",
+      "cita",
+      "reservar"
+    ],
+    "insurance": ["plan", "coverage", "insurer", "convenio", "plano", "seguro", "aseguradora"],
+    "emergency": [
+      "urgent",
+      "urgency",
+      "pain",
+      "toothache",
+      "broken",
+      "emergencia",
+      "urgencia",
+      "dor",
+      "dolor"
+    ],
+    "hours": [
+      "open",
+      "opening",
+      "close",
+      "closing",
+      "schedule",
+      "horario",
+      "abre",
+      "fecha",
+      "abierto"
+    ],
+    "whitening": [
+      "bleaching",
+      "whiten",
+      "white",
+      "clareamento",
+      "clarear",
+      "blanqueamiento",
+      "blanquear"
+    ],
+    "children": [
+      "kids",
+      "kid",
+      "child",
+      "pediatric",
+      "baby",
+      "crianca",
+      "criancas",
+      "filho",
+      "nino",
+      "ninos",
+      "hijo"
+    ],
+    "location": [
+      "address",
+      "where",
+      "located",
+      "directions",
+      "endereco",
+      "onde",
+      "localizacao",
+      "direccion",
+      "donde",
+      "ubicacion"
+    ],
+    "parking": ["park", "car", "estacionamento", "estacionar", "aparcamiento", "parqueadero"],
+    "payment": [
+      "pay",
+      "card",
+      "cash",
+      "installments",
+      "pagamento",
+      "pagar",
+      "cartao",
+      "parcelar",
+      "pago",
+      "tarjeta"
+    ],
+    "cleaning": ["hygiene", "scale", "polish", "limpeza", "limpieza", "profilaxia"],
+    "implant": ["implants", "missing", "implante", "implantes"],
+    "aligner": [
+      "aligners",
+      "invisalign",
+      "braces",
+      "orthodontics",
+      "straighten",
+      "alinhador",
+      "aparelho",
+      "ortodontia",
+      "brackets",
+      "ortodoncia"
+    ],
+    "cancel": ["cancellation", "reschedule", "change", "cancelar", "remarcar", "reagendar"],
+    "anxiety": [
+      "nervous",
+      "afraid",
+      "fear",
+      "scared",
+      "sedation",
+      "medo",
+      "ansiedade",
+      "miedo",
+      "nervioso"
+    ]
+  },
+  "entries": [
+    {
+      "id": "hours",
+      "question": "What are your opening hours?",
+      "answer": "We are open Monday to Friday from 8:00 to 19:00 and on Saturdays from 9:00 to 13:00. We are closed on Sundays and public holidays.",
+      "tags": ["hours", "open", "weekend", "saturday", "sunday"],
+      "url": "#hours"
+    },
+    {
+      "id": "location",
+      "question": "Where is the clinic located?",
+      "answer": "Brightsmile Dental is at 42 Harbour Street, Maple Bay (a fictional address for this demo), next to the Central Library. The nearest bus stop is Harbour Square, 2 minutes away.",
+      "tags": ["location", "address", "bus"],
+      "url": "#contact"
+    },
+    {
+      "id": "parking",
+      "question": "Is there parking nearby?",
+      "answer": "Yes. Patients get 2 hours of free parking at the Harbour Square garage; just bring your ticket to reception for validation.",
+      "tags": ["parking", "garage"]
+    },
+    {
+      "id": "book",
+      "question": "How do I book an appointment?",
+      "answer": "You can book online through the 'Book a visit' button at the top of this page, call us on +1 555 0100, or ask me to connect you with our team. Most check-ups are available within 3 working days.",
+      "tags": ["appointment", "book", "new patient"],
+      "url": "#book"
+    },
+    {
+      "id": "cancel",
+      "question": "What is your cancellation policy?",
+      "answer": "Please cancel or reschedule at least 24 hours in advance. Late cancellations and missed appointments may be charged a $40 fee.",
+      "tags": ["cancel", "missed", "late"]
+    },
+    {
+      "id": "prices-checkup",
+      "question": "How much does a check-up and cleaning cost?",
+      "answer": "A routine check-up with professional cleaning costs $95 and includes an exam and polish. X-rays, when needed, are $35 extra.",
+      "tags": ["price", "checkup", "cleaning", "exam"],
+      "url": "#prices"
+    },
+    {
+      "id": "prices-whitening",
+      "question": "How much is teeth whitening?",
+      "answer": "In-office whitening is $390 per session (about 90 minutes). Take-home whitening trays cost $250. A short consultation first confirms whitening is right for you.",
+      "tags": ["price", "whitening", "cosmetic"],
+      "url": "#prices"
+    },
+    {
+      "id": "insurance",
+      "question": "Do you accept dental insurance?",
+      "answer": "Yes, we work with most major dental insurance plans and can bill your insurer directly. Bring your insurance card to your first visit and we'll check your coverage for you.",
+      "tags": ["insurance", "coverage", "claim"]
+    },
+    {
+      "id": "payment",
+      "question": "Which payment methods do you accept?",
+      "answer": "We accept cash, all major credit and debit cards, and Apple/Google Pay. Treatments over $500 can be split into up to 6 interest-free monthly installments.",
+      "tags": ["payment", "card", "installments", "finance"]
+    },
+    {
+      "id": "emergency",
+      "question": "I have a dental emergency, what should I do?",
+      "answer": "Call us right away on +1 555 0100. We keep same-day emergency slots for severe pain, swelling, broken teeth or knocked-out teeth. Outside opening hours, our voicemail gives the on-call dentist's number.",
+      "tags": ["emergency", "pain", "swelling", "toothache", "broken tooth"],
+      "url": "#contact"
+    },
+    {
+      "id": "children",
+      "question": "Do you treat children?",
+      "answer": "Absolutely. We see children from their first tooth (around 1 year old). Our kids' check-ups are relaxed, and children under 12 get a free fluoride treatment.",
+      "tags": ["children", "kids", "pediatric", "family"]
+    },
+    {
+      "id": "anxiety",
+      "question": "I'm nervous about the dentist. Can you help?",
+      "answer": "You're not alone. Tell us when you book and we'll schedule a longer appointment, explain every step, and agree on a stop signal. Mild sedation is available for some treatments.",
+      "tags": ["anxiety", "fear", "nervous", "sedation"]
+    },
+    {
+      "id": "implants",
+      "question": "Do you offer dental implants?",
+      "answer": "Yes. Single implants start at $2,400 including the crown. We begin with a consultation and a 3D scan ($120, deducted from treatment if you go ahead).",
+      "tags": ["implant", "missing tooth", "price"]
+    },
+    {
+      "id": "aligners",
+      "question": "Do you offer clear aligners or braces?",
+      "answer": "We offer clear aligner treatment for teens and adults, starting from $3,200. A free 20-minute smile consultation tells you whether aligners suit you and how long treatment would take.",
+      "tags": ["aligner", "braces", "orthodontics", "invisalign"]
+    },
+    {
+      "id": "first-visit",
+      "question": "What should I bring to my first visit?",
+      "answer": "Please bring a photo ID, your insurance card if you have one, and a list of any medications you take. Arrive 10 minutes early to fill in a short health form.",
+      "tags": ["first visit", "new patient", "bring", "documents"]
+    },
+    {
+      "id": "languages",
+      "question": "Which languages do your dentists speak?",
+      "answer": "Our team speaks English, Portuguese and Spanish.",
+      "tags": ["language", "portuguese", "spanish", "english", "portugues", "espanol"]
+    },
+    {
+      "id": "accessibility",
+      "question": "Is the clinic wheelchair accessible?",
+      "answer": "Yes. The clinic is on the ground floor with step-free access, an accessible restroom, and a treatment room with extra space for wheelchairs.",
+      "tags": ["wheelchair", "accessible", "disability", "step-free"]
+    }
+  ]
+}

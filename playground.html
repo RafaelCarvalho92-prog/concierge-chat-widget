@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Concierge playground: edit the knowledge base, theme the chat widget, copy the embed snippet and watch analytics events."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Concierge Playground</title>
+    <link rel="stylesheet" href="./src/site.css" />
+  </head>
+  <body>
+    <div class="banner">
+      Demo project. Changes stay in this browser tab.
+      <a href="./index.html">Back to the clinic demo</a>
+    </div>
+    <main class="container pg">
+      <div>
+        <h1>Concierge playground</h1>
+        <p class="lead">
+          Theme the widget and edit its knowledge. The live widget in the corner updates as you
+          type.
+        </p>
+
+        <section class="panel" aria-labelledby="theme-title">
+          <h2 id="theme-title">Appearance &amp; behaviour</h2>
+          <label class="field">Business name <input id="f-name" /></label>
+          <div class="row">
+            <label class="field">Accent colour <input id="f-color" type="color" /></label>
+            <label class="field"
+              >Position
+              <select id="f-position">
+                <option value="right">Bottom right</option>
+                <option value="left">Bottom left</option>
+              </select>
+            </label>
+          </div>
+          <div class="row">
+            <label class="field"
+              >Language
+              <select id="f-language">
+                <option value="en">English</option>
+                <option value="pt">Português (Brasil)</option>
+                <option value="pt-PT">Português (Portugal)</option>
+                <option value="es">Español</option>
+              </select>
+            </label>
+            <label class="field"
+              >Confidence threshold <span id="f-threshold-value"></span>
+              <input id="f-threshold" type="range" min="0" max="1" step="0.05" />
+            </label>
+          </div>
+          <label class="field"
+            >Greeting <small>(empty = localized default)</small><input id="f-greeting"
+          /></label>
+          <label class="field"
+            >Quick replies <small>(separate with |)</small><input id="f-quick"
+          /></label>
+          <div class="row">
+            <label class="field">Handoff email <input id="f-email" type="email" /></label>
+            <label class="field">WhatsApp number <input id="f-whatsapp" inputmode="tel" /></label>
+          </div>
+        </section>
+
+        <section class="panel" aria-labelledby="embed-title">
+          <h2 id="embed-title">Embed snippet</h2>
+          <pre id="snippet" tabindex="0" aria-label="Embed snippet"></pre>
+          <button class="btn secondary" id="copy" type="button">Copy snippet</button>
+          <span id="copy-status" class="status" role="status"></span>
+        </section>
+      </div>
+
+      <div>
+        <section class="panel" aria-labelledby="kb-title">
+          <h2 id="kb-title">Knowledge base (JSON)</h2>
+          <label class="field" for="kb">
+            <small
+              >Entries with <code>id</code>, <code>question</code>, <code>answer</code>, optional
+              <code>tags</code> and <code>url</code>; plus <code>synonyms</code>.</small
+            >
+          </label>
+          <textarea id="kb" class="code" spellcheck="false" aria-describedby="kb-status"></textarea>
+          <p id="kb-status" class="status" role="status"></p>
+        </section>
+
+        <section class="panel" aria-labelledby="inspect-title">
+          <h2 id="inspect-title">Retrieval inspector</h2>
+          <label class="field"
+            >Test a question <input id="probe" value="how much does whitening cost?"
+          /></label>
+          <ol id="hits" class="hits" aria-live="polite"></ol>
+        </section>
+
+        <div class="cols">
+          <section class="panel" aria-labelledby="events-title">
+            <h2 id="events-title">Analytics events</h2>
+            <ul id="events" class="log-list" aria-live="polite"></ul>
+          </section>
+          <section class="panel" aria-labelledby="unanswered-title">
+            <h2 id="unanswered-title">Unanswered questions</h2>
+            <p class="empty" id="unanswered-empty">
+              Questions the assistant couldn't answer show up here: your to-do list for the FAQ.
+            </p>
+            <ul id="unanswered" class="log-list"></ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/playground/main.ts"></script>
+  </body>
+</html>

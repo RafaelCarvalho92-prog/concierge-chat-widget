@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Demo dental clinic website with the Concierge AI support chat widget embedded (fictional business)."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Brightsmile Dental - Concierge Chat Widget Demo</title>
+    <link rel="stylesheet" href="./src/site.css" />
+  </head>
+  <body>
+    <div class="banner">
+      Demo project, fictional business. Try the chat bubble in the corner, or open the
+      <a href="./playground.html">playground</a> to customise it.
+    </div>
+
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a class="logo" href="#">Bright<span>smile</span> Dental</a>
+        <a href="#services">Services</a>
+        <a href="#prices">Prices</a>
+        <a href="#hours">Hours</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#book">Book a visit</a>
+      </nav>
+    </div>
+
+    <main class="container">
+      <div class="hero">
+        <div>
+          <h1>Gentle, modern dentistry for the whole family.</h1>
+          <p>
+            Check-ups, whitening, aligners and implants in Maple Bay. Questions at 11pm? Our
+            assistant answers instantly from our own FAQ, and hands you over to a real person when
+            it isn't sure.
+          </p>
+          <a class="btn" href="#book" id="book">Book a visit</a>
+          <a class="btn secondary" href="./playground.html">Open the playground</a>
+        </div>
+        <div class="hero-card">
+          <p><strong>Try asking the assistant:</strong></p>
+          <ul>
+            <li>"How much is teeth whitening?"</li>
+            <li>"Vocês aceitam convênio?" (Portuguese)</li>
+            <li>"¿Atienden a niños?" (Spanish)</li>
+            <li>"Can I bring my dog?" (it will offer a handoff)</li>
+          </ul>
+        </div>
+      </div>
+
+      <section id="services" aria-labelledby="services-title">
+        <h2 id="services-title">Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Check-up &amp; cleaning</h3>
+            <p>Exam, professional cleaning and polish.</p>
+          </article>
+          <article class="card">
+            <h3>Whitening</h3>
+            <p>In-office sessions or take-home trays.</p>
+          </article>
+          <article class="card">
+            <h3>Clear aligners</h3>
+            <p>Discreet orthodontics for teens and adults.</p>
+          </article>
+          <article class="card">
+            <h3>Implants</h3>
+            <p>Permanent replacement for missing teeth.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="prices" aria-labelledby="prices-title">
+        <h2 id="prices-title">Prices</h2>
+        <div class="card">
+          <table>
+            <tbody>
+              <tr>
+                <td>Check-up + cleaning</td>
+                <td>$95</td>
+              </tr>
+              <tr>
+                <td>In-office whitening</td>
+                <td>$390</td>
+              </tr>
+              <tr>
+                <td>Clear aligners</td>
+                <td>from $3,200</td>
+              </tr>
+              <tr>
+                <td>Single implant (incl. crown)</td>
+                <td>from $2,400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="hours" aria-labelledby="hours-title">
+        <h2 id="hours-title">Opening hours</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Mon - Fri</h3>
+            <p>8:00 - 19:00</p>
+          </div>
+          <div class="card">
+            <h3>Saturday</h3>
+            <p>9:00 - 13:00</p>
+          </div>
+          <div class="card">
+            <h3>Sunday</h3>
+            <p>Closed</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>42 Harbour Street, Maple Bay (fictional) · +1 555 0100 · hello@brightsmile.example</p>
+        <p class="tip">
+          <strong>For site owners:</strong> this whole assistant is one script tag. See the
+          <a href="./playground.html">playground</a> for the embed snippet.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site">
+      <div class="container">
+        Brightsmile Dental is a fictional clinic. Concierge widget demo built by
+        <a href="https://rafaelcarvalho.dev">Rafael Carvalho</a>.
+      </div>
+    </footer>
+
+    <!-- The entire integration: -->
+    <script
+      src="./concierge.js"
+      data-business-id="brightsmile"
+      data-business-name="Brightsmile Dental"
+      data-color="#0e7490"
+      data-position="right"
+      data-kb-url="./kb/brightsmile.json"
+      data-handoff-email="hello@brightsmile.example"
+      data-handoff-whatsapp="15550100100"
+      data-quick-replies="Opening hours|Teeth whitening price|Do you accept insurance?"
+      defer
+    ></script>
+  </body>
+</html>
